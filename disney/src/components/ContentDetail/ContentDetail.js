@@ -1,8 +1,13 @@
 import React from 'react'
+import { CardContainer } from './styles'
 
-const ContentDetail = () => {
+const ContentDetail = ({title,resume}) => {
   return (
-    <div>ContentDetail</div>
+    <CardContainer>
+      <h1>{title}</h1>
+      <p>{resume}</p>
+      
+    </CardContainer>
   )
 }
 
