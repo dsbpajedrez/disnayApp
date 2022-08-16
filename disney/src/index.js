@@ -5,6 +5,24 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { GlobalStyle } from './globalStyles/GlobalStyles';
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDzaWzN8K7Gkp3KmLvl44UCBcF4TkhakEs",
+  authDomain: "peliculas-fe5e2.firebaseapp.com",
+  projectId: "peliculas-fe5e2",
+  storageBucket: "peliculas-fe5e2.appspot.com",
+  messagingSenderId: "233676903397",
+  appId: "1:233676903397:web:4bdd626567d1bd7397550c"
+};
+
+// Initialize Firebase
+initializeApp(firebaseConfig);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
