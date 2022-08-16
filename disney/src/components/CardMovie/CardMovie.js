@@ -1,14 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { Container, Image, Title } from './styles'
+import { Container, Image, Redirection, Title } from './styles'
 
 const CardMovie = ({url,id,title}) =>{
     return(
-        <Container key={id}>
-            <Link to={`/movieDetail/${title}`}>
+        <Container >
+            <Redirection to={`/movieDetail/${title}`}>
                 <Title>{title}</Title>
                 <Image src={url} key={id}/> 
-            </Link>
+            </Redirection>
         </Container>
     )
 

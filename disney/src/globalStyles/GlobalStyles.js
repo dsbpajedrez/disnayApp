@@ -9,8 +9,10 @@ export const GlobalStyle = createGlobalStyle`
         overflow:hidden;
 
         --color-header-background:#0e0b14;
+        --color-main:rgb(26, 29, 41);
 
-        --title-size :1.6rem;
+        --title-size :2rem;
+        --paragraph-size:1.4rem;
     }
     body{
         font-family: Avenir-World-for-Disney-Regular,sans-serif

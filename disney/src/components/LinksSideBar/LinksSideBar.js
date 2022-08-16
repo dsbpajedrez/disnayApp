@@ -1,9 +1,13 @@
 import React from 'react'
-import { Container } from './styles'
+import { Container, Item, List, Redirection } from './styles'
 
 const LinksSideBar = () => {
   return (
-    <Container>LinksSideBar</Container>
+    <Container>
+      <List>
+        <Item><Redirection to='/'>Home</Redirection></Item>
+      </List>
+    </Container>
   )
 }
 

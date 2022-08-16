@@ -7,6 +7,7 @@ export const Container = styled.div`
     flex-wrap:wrap;
     padding:0.5rem;
     gap:0.5rem;
+    background-color:var(--color-main);
     overflow-y:auto;
     &::-webkit-scrollbar {
         -webkit-appearance: none;
@@ -25,7 +26,8 @@ export const Container = styled.div`
         border-radius: 20px;
         border: 2px solid #f1f2f3;
         :hover{
-            background-color: #333232;
+            background-color: #0e0b14;
+            border: 2px solid white;
         }
     }
     

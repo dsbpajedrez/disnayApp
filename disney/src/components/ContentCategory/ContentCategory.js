@@ -40,7 +40,7 @@ const ContentCategory = () => {
   
   return (
     <Container>
-      {movies.map(movie=><CardMovie{...movie}/>)}
+      {movies.map(movie=><CardMovie{...movie} key={movie.id}/>)}
     </Container>
   )
 }
