@@ -6,7 +6,11 @@ export const CardContainer = styled.div`
     justify-content:space-around;
     padding:0.5rem;
     gap:0.5rem;
+    overflow:auto;
     
+`
+export const ImageContainer = styled.div` 
+    position:relative;
 `
 export const InformationContainer = styled.div`
     display:flex;
@@ -32,7 +36,13 @@ export const Paragraph = styled.p`
 `
 export const PlayerButton= styled.img`
     background-image:cover;
-    width:10rem;
-    height:10rem;
-
+    width:13rem;
+    height:13rem;
+    position:absolute;
+    transform:translateX(-50%);
+    // transform:translateY(-50%);
+    top:50%;
+    left:50%;
+    opacity:0.7;
+    cursor:pointer;
 `

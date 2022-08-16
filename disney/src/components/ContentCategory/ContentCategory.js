@@ -36,7 +36,7 @@ const ContentCategory = () => {
           ))
         )    
       })
-  },[])
+  },[id])
   
   return (
     <Container>

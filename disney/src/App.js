@@ -10,7 +10,7 @@ function App() {
 <LayOut>
   <Header/>
   <Home/>
-  <Footer/>
+  {/* <Footer/> */}
 </LayOut>
   );
 }

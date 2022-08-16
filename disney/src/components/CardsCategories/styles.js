@@ -35,6 +35,19 @@ export const Container = styled.div`
         border-radius: 1rem;  
     }
 `
-export const Redirection = styled(Link)` 
+export const Redirection = styled(Link)`
+height:fit-content;
+transition: 450ms all;
+-webkit-transform-origin:center top;
+transform-origin:center top;
+&:hover{
+-webkit-transform:translate3d(0,0,-100px);
+    transform:translate3d(0,0,100px);
+    transform:scale(1.1);
+    z-index:100;
+    // border:2px solid white;
+    // box-shadow: white 0px 14px 28px, white 0px 10px 10px;
+    box-shadow: white 0px 2px 4px, white 0px 7px 13px -3px, white 0px -3px 0px inset;
+}; 
 
 `

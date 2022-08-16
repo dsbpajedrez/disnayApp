@@ -9,5 +9,5 @@ export const CardContainer = styled.div`
 export const Image = styled.img`
     width:240px;
     height:240px;
-    object-fit:cover;
+    background-image:cover;
 `
