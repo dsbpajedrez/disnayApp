@@ -6,11 +6,26 @@ const ContentCategory = () => {
   const [movies,setMovies] =useState([])
   const id = useParams().id;
   
+  const selection = ()=>{
+    console.log(id);
+    switch (id) {
+      case '1':
+        return 'Marvel'
+     
+        case '2':
+          return 'dc'       
+    
+      default:
+        break;
+    }
+  }
   useEffect(()=>{
+   
+    console.log(`selction: ${selection()}`);
     const db = getFirestore()
     const q=query(
       collection(db,'peliculas'),
-      where('category','==','Marvel')
+      where('category','==',`${selection()}`)
       )
     getDocs(q)
       .then(snapshot=>{
@@ -19,8 +34,7 @@ const ContentCategory = () => {
             {
             id:item.id,
             ...item.data()
-          }
-          
+          }          
           ))
         )
     
