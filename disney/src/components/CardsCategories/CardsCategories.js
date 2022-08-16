@@ -12,8 +12,9 @@ const CardsCategories = () => {
   return (
     <Container>
     {images.map((card,idx)=> {
-      return (<Redirection to={`/${idx+1}`}>
-        <CardCategory key={card} image={card}/>
+      return (
+      <Redirection to={`/${idx+1}`} key={card}>
+        <CardCategory  image={card}/>
       </Redirection> )
     }
     )}

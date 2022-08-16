@@ -37,10 +37,10 @@ const ContentCategory = () => {
         )    
       })
   },[])
-  console.log(movies??[]);
+  
   return (
     <Container>
-      {movies.map(item=><CardMovie{...item}/>)}
+      {movies.map(movie=><CardMovie{...movie}/>)}
     </Container>
   )
 }
