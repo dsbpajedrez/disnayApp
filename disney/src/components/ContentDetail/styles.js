@@ -7,6 +7,7 @@ export const CardContainer = styled.div`
     padding:0.5rem;
     gap:0.5rem;
     overflow:auto;
+    background-color:rgb(26, 29, 41);
     
 `
 export const ImageContainer = styled.div` 
@@ -28,10 +29,12 @@ export const Image = styled.img`
 export const Title = styled.h1`
     font-size:var(--title-size);
     font-weight:bold;
+    color:white;
 
 `
 export const Paragraph = styled.p`
     font-size:var(--paragraph-size);
+    color:white;
 
 `
 export const PlayerButton= styled.img`

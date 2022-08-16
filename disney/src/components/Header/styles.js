@@ -7,8 +7,13 @@ export const Container = styled.div`
     background-color:rgb(7,21,79);
     // background-color:white;
     padding:0.5rem;
+    display:flex;
+    justify-content:space-between;
 `
 export const Image = styled.img`
     width:5rem;
     heigth:5rem;
 ` 
+export const LeftSide = styled.div`
+    color:white;
+`
