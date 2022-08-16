@@ -6,7 +6,7 @@ export const Container = styled.div`
     justify-content:space-around;
     flex-wrap:wrap;
     padding:0.5rem;
-    gap:0.5rem;
+    gap:1rem;
     background-color:var(--color-main);
     overflow-y:auto;
     &::-webkit-scrollbar {

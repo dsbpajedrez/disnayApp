@@ -1,9 +1,11 @@
 import React from 'react'
-import { Container } from './styles'
-
+import { Container, Image } from './styles'
+import disenyIcon from '../../assests/disney-icon.svg'
 const Header = () => {
   return (
-    <Container>Header</Container>
+    <Container>
+      <Image src={disenyIcon}/>
+    </Container>
   )
 }
 
