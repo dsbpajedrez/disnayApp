@@ -16,9 +16,7 @@ const Register = () => {
   const [password, setPassword] = useState('')
   const auth = getAuth(credential)
   const submit =async(event)=>{
-    if(infoUsuario){
-      alert('Ya tienes cuenta , ingresa desde el login!')
-    }
+
     event.preventDefault()
     const infoUsuario= await createUserWithEmailAndPassword(auth,email,password);
     setUser(email)
