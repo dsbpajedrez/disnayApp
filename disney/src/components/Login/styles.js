@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -29,4 +30,9 @@ export const Titulo = styled.h1`
     withd:100%;
     text-align:center;
     color:var(--color-header-background);
+`
+export const Redirection = styled(Link)`
+    color:rgb(26, 29, 41);
+    font-size:2rem;
+    text-decoration:none;
 `

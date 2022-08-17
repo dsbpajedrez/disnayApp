@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState,useContext} from 'react'
 
 import 'firebase/auth'
 import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth'
@@ -7,16 +7,22 @@ import Boton from '../../estilosComunes/BotonLogIn'
 import { Container, FormularioLogIn, Input, Label, Redirection, Titulo } from './styles'
 import { Link } from 'react-router-dom';
 
+import { ctxUser } from '../ContextUser/ContextUser';
+
 
 const Register = () => {
+  const {setUser} = useContext(ctxUser)
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const auth = getAuth(credential)
-console.log(auth);
   const submit =async(event)=>{
+    if(email){
+      alert('Ya tienes cuenta , ingresa desde el login!')
+    }
     event.preventDefault()
     const infoUsuario= await createUserWithEmailAndPassword(auth,email,password);
-    console.log(infoUsuario);
+    setUser(email)
+    
   }
  
   return (

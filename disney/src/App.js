@@ -8,6 +8,7 @@ import { credential } from './credentials/Credentials';
 import { onAuthStateChanged, getAuth } from 'firebase/auth'
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
+import SaveUser from './components/ContextUser/ContextUser';
 const auth = getAuth(credential)
 
 function App() {
@@ -22,12 +23,14 @@ function App() {
  
   return (
 <BrowserRouter>
-  <LayOut>  
+  <LayOut> 
+    <SaveUser>
     <Header/>
     <Routes>
       <Route path='/*' element={user? <Home/>:<Register/>}/>
       <Route path='/login/*' element={user? <Home/>:<Login/>}/>
     </Routes>
+    </SaveUser> 
     
       
   </LayOut>
