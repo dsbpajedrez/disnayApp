@@ -6,7 +6,7 @@ import player from '../../assests/icon-player.svg'
 const ContentDetail = ({title,resume}) => {
   const [information, setInformation] = useState()
   const id= useParams().id
-  console.log(id);
+
   useEffect(()=>{
     const db = getFirestore()
     const q= query(
@@ -24,7 +24,7 @@ const ContentDetail = ({title,resume}) => {
         })
 
   },[])
-  console.log(information??[]);
+  ;
   return (
     <>
     

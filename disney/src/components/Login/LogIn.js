@@ -14,9 +14,16 @@ const Login = () => {
   const [password, setPassword] = useState('')
   const auth = getAuth(credential)  
 
-  const submit =async(event)=>{
+  const submit =(event)=>{
     event.preventDefault()
     signInWithEmailAndPassword(auth,email,password)
+      .then(log=>{
+        console.log(log);
+      }).catch(e=>{
+        setUser(null)
+        alert('No tienes cuenta, crea una !')
+        })
+    
     setUser(email)    
   }
 
