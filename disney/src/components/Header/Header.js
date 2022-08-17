@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Image, LeftSide, Paragraph } from './styles'
+import { ButtonLogOut, Container, Image, LeftSide, Paragraph } from './styles'
 import disenyIcon from '../../assests/disney-icon.svg'
 import { Link } from 'react-router-dom'
 import { credential } from '../../credentials/Credentials'
@@ -20,7 +20,7 @@ const Header = () => {
       </Link>
       <LeftSide>
         <Paragraph>{user?user:'Guest'}</Paragraph>
-        {user!=''?<button onClick={()=> toSignOut(auth)}>Logout</button>:<></> }
+        {user!=''?<ButtonLogOut onClick={()=> toSignOut(auth)}>Logout</ButtonLogOut>:<></> }
         
         
       </LeftSide>

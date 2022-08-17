@@ -11,12 +11,12 @@ import { ctxUser } from '../ContextUser/ContextUser';
 
 
 const Register = () => {
-  const {setUser} = useContext(ctxUser)
+  const {setUser,user} = useContext(ctxUser)
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const auth = getAuth(credential)
   const submit =async(event)=>{
-    if(email){
+    if(infoUsuario){
       alert('Ya tienes cuenta , ingresa desde el login!')
     }
     event.preventDefault()
@@ -34,7 +34,7 @@ const Register = () => {
         <Label>Contraseña</Label>
         <Input type='password' name='password'onChange={event=>setPassword(event.target.value)} />
         <Boton onClick={event =>submit(event)} texto='Create' width='50%' style={{marginTop:'3rem'}}/>
-        <Redirection to='/login' >Ya tienes cuenta?, click acá!</Redirection>
+        <Redirection to='/' >Ya tienes cuenta?, click acá!</Redirection>
       </FormularioLogIn>
       
     </Container>

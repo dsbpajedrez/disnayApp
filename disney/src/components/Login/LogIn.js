@@ -29,7 +29,7 @@ const Login = () => {
         <Label>Contraseña</Label>
         <Input type='password' name='password'onChange={event=>setPassword(event.target.value)} />
         <Boton onClick={event =>submit(event)} texto='LogIn' width='50%' style={{marginTop:'3rem'}}/>
-        <Redirection to='/' >No tienes cuenta?, click acá!</Redirection>
+        <Redirection to='/register' >No tienes cuenta?, click acá!</Redirection>
       </FormularioLogIn>
     </Container>
   )
