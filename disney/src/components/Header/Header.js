@@ -1,12 +1,15 @@
 import React from 'react'
-import { Container, Image, LeftSide } from './styles'
+import { Container, Image, LeftSide, Paragraph } from './styles'
 import disenyIcon from '../../assests/disney-icon.svg'
+import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <Container>
-      <Image src={disenyIcon}/>
+      <Link to='/'>
+        <Image src={disenyIcon}/>        
+      </Link>
       <LeftSide>
-        <p>davidbenjumea@homail.com</p>
+        <Paragraph>davidbenjumea@homail.com</Paragraph>
       </LeftSide>
     </Container>
   )

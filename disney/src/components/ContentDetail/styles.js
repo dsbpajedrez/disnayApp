@@ -5,13 +5,18 @@ export const CardContainer = styled.div`
     display:flex;
     justify-content:space-around;
     padding:0.5rem;
-    gap:0.5rem;
+    gap:1rem;
     overflow:auto;
     background-color:rgb(26, 29, 41);
     
 `
 export const ImageContainer = styled.div` 
     position:relative;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
 `
 export const InformationContainer = styled.div`
     display:flex;
@@ -22,8 +27,11 @@ export const InformationContainer = styled.div`
 `
 export const Image = styled.img`
     width:40rem;
-    height:100%;
+    // height:100%;
+    height:40rem;
     background-image:cover;
+    box-shadow:white 0px 0px 0px 2px,white  0px 4px 6px -1px, white 0px 1px 0px inset;
+
     
 `
 export const Title = styled.h1`
@@ -42,7 +50,7 @@ export const PlayerButton= styled.img`
     width:13rem;
     height:13rem;
     position:absolute;
-    transform:translateX(-50%);
+    transform:translate(-50%,-50%);
     // transform:translateY(-50%);
     top:50%;
     left:50%;

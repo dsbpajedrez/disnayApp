@@ -15,8 +15,12 @@ const ContentCategory = () => {
         return 'Marvel'
       case '2':
           return 'dc'    
+      case '3':
+        return 'comedy'
+      case '4':
+        return 'drama'
       default:
-        break;
+        return 'action'
     }
   }
   useEffect(()=>{

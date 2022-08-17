@@ -17,3 +17,6 @@ export const Image = styled.img`
 export const LeftSide = styled.div`
     color:white;
 `
+export const Paragraph = styled.p`
+    font-size:var(--paragraph-size);
+`

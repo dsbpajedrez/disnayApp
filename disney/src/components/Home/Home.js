@@ -2,14 +2,14 @@ import React from 'react'
 import CardsCategories from '../CardsCategories/CardsCategories'
 import LinksSideBar from '../LinksSideBar/LinksSideBar'
 import { Container } from './styles'
-import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import { Routes,Route } from 'react-router-dom'
 import NotFound from '../NotFound/NotFound'
 import ContentCategory from '../ContentCategory/ContentCategory'
 import ContentDetail from '../ContentDetail/ContentDetail'
 
 const Home = () => {
   return (
-    <BrowserRouter>
+    
     <Container>
       <LinksSideBar/>      
       <Routes>
@@ -19,7 +19,7 @@ const Home = () => {
         <Route path='*' element={<NotFound/>}/>
       </Routes>      
     </Container>
-    </BrowserRouter>
+   
   )
 }
 
