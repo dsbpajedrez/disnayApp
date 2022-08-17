@@ -18,8 +18,13 @@ const Register = () => {
   const submit =async(event)=>{
 
     event.preventDefault()
-    const infoUsuario= await createUserWithEmailAndPassword(auth,email,password);
-    setUser(email)
+    try{
+      const infoUsuario= await createUserWithEmailAndPassword(auth,email,password);
+      setUser(email)
+    }catch(e){
+      alert(e)
+    }
+    
     
   }
  
@@ -40,3 +45,5 @@ const Register = () => {
 }
 
 export default Register
+
+

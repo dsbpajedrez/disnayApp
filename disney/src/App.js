@@ -1,14 +1,15 @@
 
-import {useState} from 'react'
+import React,{useState} from 'react'
 import LayOut from './LayuOut/LayOut';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { credential } from './credentials/Credentials'; 
 import { onAuthStateChanged, getAuth } from 'firebase/auth'
-import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import SaveUser from './components/ContextUser/ContextUser';
+import Login from './components/LogIn/LogIn';
+
 const auth = getAuth(credential)
 
 function App() {

@@ -8,7 +8,7 @@ import Boton from '../../estilosComunes/BotonLogIn'
 import { Container, FormularioLogIn, Input, Label, Titulo, Redirection } from './styles'
 
 
-const Login = () => {
+const LogIn = () => {
   let {setUser} = useContext(ctxUser)
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -42,4 +42,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default LogIn
